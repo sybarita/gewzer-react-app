@@ -1,50 +1,85 @@
 @font-face {
-  font-family: 'Euro';
+  font-family: 'Luminari';
   font-display: block;
-  src: url('./fonts/EurostileExtendedBlack.ttf') format('truetype');
+  src: local('Luminari'), url('./fonts/Luminari.ttf') format('truetype');
 }
 
 .App {
   text-align: center;
-  font-family: 'Euro';
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 2.0s linear;
-  height: 20vmin;
-  pointer-events: none;
+  font-family: 'Luminari';
+  background-color: lightpink;
+  margin-top: 0;
+  padding: 2vw;
 }
 
 .App-header {
-  background-color: #999999;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(20px + 2vmin);
-  color: rgb(224, 118, 118);
-}
-
-.App-link {
-  color: #a5a5a5;
-}
-
-ul {
+  margin: auto;
   display: block;
-  color: #a5a5a5;
-  padding: 50px;
-  list-style-type: none;
-  font-family: arial;
-  border: 2px solid rgba(255, 65, 65, 0.384);
+  margin-top: 0;
+  margin-bottom: 2vw;
+  font-size: 10vw;
+  width: 40vw;
+  height: 15vw;
+  color: rgb(253, 163, 163);
+  background-color: lightpink;
+  border-radius: 15vmin;
+}
+
+p {
+  display: block;
+  margin: auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 1.8s ease-in-out;
+  height: 20vw;
+  pointer-events: none;
+  display: block;
+  margin: auto;
+  margin-top: -5vw;
+  margin-bottom: 0;
+  filter: drop-shadow(2vw 1vw 1vw grey);
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
+}
+
+#bioBox {
+  color: rgb(252, 136, 136);
+}
+
+#form1 {
+  display: none;
+  margin: auto;
+  width: 50vw;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  background-color: lightpink;
+}
+
+
+ul {
+  display: none;
+  width: 30vw;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #8a8a8a31;
+  padding: 5px;
+  list-style-type: none;
+  font-family: Luminari;
+  font-size: calc(10px + 2vw);
+  background-color: lightpink;
+  border: 2px solid rgba(255, 65, 65, 0.384);
+  border-radius: 5vmin;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 class App extends React.Component {
@@ -27,7 +27,6 @@ class App extends React.Component {
         
       </ul>
     )
-
   }
 
   render() {
@@ -35,19 +34,25 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Smoke weed every day
+            gewzer
           </p>
         </header>
-        <form onSubmit={this.handleSubmit}>
+        <img src={logo} className="App-logo" alt="logo" />
+        <div id="bioBox">
+          juan escobedo aka 'gewzer'<br></br> 
+          @gewzer38 on Instagram <br></br>
+          @juander on SoundCloud <br></br>
+          los angeles / fresno
+        </div>
+        <form id="form1" onSubmit={this.handleSubmit}>
           <label>
-            weed   
+            to do:   
             <input 
               type="text" 
               onChange={this.handleChange}
               value={this.state.inputText}
-              /> 
+            /> 
           </label>
           
         </form>
