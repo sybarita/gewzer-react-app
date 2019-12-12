@@ -42,7 +42,7 @@ class App extends React.Component {
         <div id="bioBox">
           juan escobedo aka 'gewzer'<br></br> 
           @gewzer38 on Instagram <br></br>
-          @juander on SoundCloud <br></br>
+          @juander on <a href src="http://soundcloud.com/juander">SoundCloud</a> <br></br>
           los angeles / fresno
         </div>
         <form id="form1" onSubmit={this.handleSubmit}>
