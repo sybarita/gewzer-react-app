@@ -37,7 +37,7 @@ p {
   pointer-events: none;
   display: block;
   margin: auto;
-  margin-top: -5vw;
+  margin-top: -10vw;
   margin-bottom: -5vw;
   filter: drop-shadow(2vw 1vw 1vw grey);
 }
