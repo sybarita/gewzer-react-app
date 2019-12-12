@@ -34,9 +34,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
             gewzer
-          </p>
         </header>
         <img src={logo} className="App-logo" alt="logo" />
         <div id="bioBox">
