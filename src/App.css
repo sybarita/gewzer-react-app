@@ -4,6 +4,16 @@
   src: local('Luminari'), url('./fonts/Luminari.ttf') format('truetype');
 }
 
+a {
+  color: crimson;
+}
+a:visited {
+  color: darkred;
+}
+a:hover, a:active, a:focus {
+  color: indianred;
+}
+
 .App {
   text-align: center;
   font-family: 'Luminari';
