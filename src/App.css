@@ -5,13 +5,13 @@
 }
 
 a {
-  color: crimson;
+  color: rgb(252, 136, 136);
 }
 a:visited {
-  color: darkred;
+  color: rgb(255, 97, 97);
 }
 a:hover, a:active, a:focus {
-  color: indianred;
+  color: rgb(255, 109, 109);
 }
 
 .App {
