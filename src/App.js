@@ -39,9 +39,10 @@ class App extends React.Component {
         <img src={logo} className="App-logo" alt="logo" />
         <div id="bioBox">
           juan escobedo aka 'gewzer'<br></br> 
-          @gewzer38 on Instagram <br></br>
-          @juander on <a href="http://soundcloud.com/juander">SoundCloud</a> <br></br>
-          los angeles / fresno
+          @gewzer38 on Instagram<br></br>
+          @juander on <a href="http://soundcloud.com/juander">soundcloud</a><br></br>
+          los angeles / fresno<br></br>
+          3800
         </div>
         <form id="form1" onSubmit={this.handleSubmit}>
           <label>
