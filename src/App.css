@@ -14,16 +14,13 @@ a:hover, a:active, a:focus {
   color: rgb(255, 109, 109);
 }
 
-#body {
-  cursor: url(sword.cur), crosshair;
-}
-
 .App {
   text-align: center;
   font-family: 'Luminari';
   background-color: lightpink;
   margin-top: 0;
   padding: 2vw;
+  cursor: url('./cur/sword.cur'), crosshair;
 }
 
 .App-header {
