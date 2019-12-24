@@ -15,7 +15,7 @@ a:hover, a:active, a:focus {
 }
 
 #body {
-  cursor: url('./src/cur/sword.cur'), crosshair;
+  cursor: url('./public/cur/sword.cur'), crosshair;
 }
 
 .App {
