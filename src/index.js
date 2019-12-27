@@ -10,7 +10,7 @@ function randomCursor() {
     var rand = cursorArray[~~(Math.random() * cursorArray.length | 0)];
     document.getElementById(App).css("cursor", rand);
   };
-randomCursor();
+App.onmousedown(randomCursor());
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
