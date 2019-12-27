@@ -31,7 +31,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const script = document.createElement("script");
-    script.text = 'var cursorArray = ["url(/cur/fresa.cur), auto", "url(/cur/sword.cur), auto","url(/cursors/bug.cur), auto"];var rand = cursorArray[~~(Math.random() * cursorArray.length | 0)];document.getElementById(App).css("cursor", rand);'
+    script.text = 'var cursorArray = ["url(/cur/fresa.cur), auto", "url(/cur/sword.cur), auto"];var rand = cursorArray[~~(Math.random() * cursorArray.length | 0)];document.getElementById(App).css("cursor", rand);'
     document.body.appendChild(script);
   }
   
