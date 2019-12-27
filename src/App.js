@@ -3,6 +3,7 @@ import logo from "./logo.png";
 import "./App.css";
 import fresa from "./cur/fresa.cur";
 import sword from "./cur/sword.cur";
+import bug from "./cur/bug.cur";
 
 class App extends React.Component {
 
@@ -11,7 +12,7 @@ class App extends React.Component {
   }
 
   render() {
-    const cursorArray = [fresa, sword];
+    const cursorArray = [fresa, sword, bug];
     const rand = cursorArray[~~((Math.random() * cursorArray.length) | 0)];
     console.log(rand);
     const randString = "url(" + rand + "), crosshair";
@@ -23,10 +24,10 @@ class App extends React.Component {
         <div id="bioBox">
           juan escobedo aka 'gewzer'
           <br></br>
-          @gewzer38 on
+          @gewzer38 on{" "}
           <a href="https://www.instagram.com/gewzer38">instagram</a>
           <br></br>
-          @juander on
+          @juander on{" "}
           <a href="http://soundcloud.com/juander">soundcloud</a>
           <br></br>
           los angeles / fresno

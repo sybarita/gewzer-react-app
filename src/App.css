@@ -21,6 +21,8 @@ a:hover, a:active, a:focus {
   margin-top: 0;
   padding: 2vw;
   cursor: url('./cur/sword.cur'), crosshair;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
