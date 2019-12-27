@@ -5,7 +5,8 @@ import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-document.onmousemove = console.log("help!");
+
+console.log("help!");
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

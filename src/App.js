@@ -1,21 +1,33 @@
-import React from 'react';
-import logo from './logo.png';
-import './App.css';
+import React from "react";
+import logo from "./logo.png";
+import "./App.css";
+import fresa from "./cur/fresa.cur";
+import sword from "./cur/sword.cur";
 
-class App extends React.Component {  
+class App extends React.Component {
+
+  cursorStyle(rand) {
+    return `cursor:${rand}`;
+  }
+
   render() {
+    const cursorArray = [fresa, sword];
+    const rand = cursorArray[~~((Math.random() * cursorArray.length) | 0)];
+    console.log(rand);
+    const randString = "url(" + rand + "), crosshair";
+    console.log(randString);
     return (
-      <div className="App">
-        <header className="App-header">
-            gewzer
-        </header>
+      <div className="App" style={{cursor: randString }}>
+        <header className="App-header">gewzer</header>
         <img src={logo} className="App-logo" alt="logo" />
         <div id="bioBox">
           juan escobedo aka 'gewzer'
-          <br></br> 
-          @gewzer38 on <a href="https://www.instagram.com/gewzer38">instagram</a>
           <br></br>
-          @juander on <a href="http://soundcloud.com/juander">soundcloud</a>
+          @gewzer38 on
+          <a href="https://www.instagram.com/gewzer38">instagram</a>
+          <br></br>
+          @juander on
+          <a href="http://soundcloud.com/juander">soundcloud</a>
           <br></br>
           los angeles / fresno
           <br></br>
@@ -24,13 +36,6 @@ class App extends React.Component {
       </div>
     );
   }
-  randomCursor() {
-    var cursorArray = ["url(/cur/fresa.cur), auto", "url(/cur/sword.cur), auto"];
-    var rand = cursorArray[~~(Math.random() * cursorArray.length | 0)];
-    document.getElementById("root").style.cursor = rand;
-  };
 }
-
-
 
 export default App;

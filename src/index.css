@@ -14,10 +14,6 @@ html {
   cursor: url('./cur/fresa.cur'), crosshair;
 }
 
-#root {
-  margin-top: 0;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
