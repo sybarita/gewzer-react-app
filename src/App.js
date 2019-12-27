@@ -2,39 +2,7 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 
-class App extends React.Component {
-  state = {
-    todos: [],
-    inputText: ""
-  }
-
-  handleChange = (event) => {
-    this.setState({inputText: event.target.value})
-  }
-
-  handleSubmit = (event) => {
-    this.setState({
-      todos: [...this.state.todos, this.state.inputText],
-      inputText: ""
-    
-    })
-    event.preventDefault()
-  }
-
-  listWeed = () => {
-    return (
-      <ul>
-        
-      </ul>
-    )
-  }
-
-  componentDidMount() {
-    const script = document.createElement("script");
-    script.text = 'var cursorArray = ["url(/cur/fresa.cur), auto", "url(/cur/sword.cur), auto"];var rand = cursorArray[~~(Math.random() * cursorArray.length | 0)];document.getElementById(App).css("cursor", rand);'
-    document.body.appendChild(script);
-  }
-  
+class App extends React.Component {  
   render() {
     console.log(this.state)
     return (
@@ -54,22 +22,6 @@ class App extends React.Component {
           <br></br>
           3800
         </div>
-        <form id="form1" onSubmit={this.handleSubmit}>
-          <label>
-            to do:   
-            <input 
-              type="text" 
-              onChange={this.handleChange}
-              value={this.state.inputText}
-            /> 
-          </label>
-          
-        </form>
-        <ul>
-         {this.state.todos.map(function(todo) {
-           return <li>{todo}</li>
-         })}
-        </ul>
       </div>
     );
   }
