@@ -4,7 +4,6 @@ import './App.css';
 
 class App extends React.Component {  
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <header className="App-header">
@@ -25,6 +24,13 @@ class App extends React.Component {
       </div>
     );
   }
+  randomCursor() {
+    var cursorArray = ["url(/cur/fresa.cur), auto", "url(/cur/sword.cur), auto"];
+    var rand = cursorArray[~~(Math.random() * cursorArray.length | 0)];
+    document.getElementById("root").style.cursor = rand;
+  };
 }
+
+
 
 export default App;
