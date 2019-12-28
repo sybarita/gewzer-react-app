@@ -19,7 +19,6 @@ a:hover, a:active, a:focus {
   font-family: 'Luminari';
   background-color: lightpink;
   margin-top: 0;
-  padding: 2vw;
   cursor: url('./cur/sword.cur'), crosshair;
   width: 100vw;
   height: 100vh;
@@ -30,29 +29,29 @@ a:hover, a:active, a:focus {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 10vw;
-  width: 40vw;
-  height: 15vw;
+  font-size: 15vh;
+  width: 100vw;
+  height: 15vh;
   color: rgb(253, 163, 163);
   background-color: lightpink;
-  border-radius: 15vmin;
+  border-radius: 15vh;
 }
 
 p {
   display: block;
   margin: auto;
-  font-size: 5vw;
+  font-size: 5vh;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 1.8s ease-in-out;
-  height: 30vw;
+  height: 60vh;
   pointer-events: none;
   display: block;
   margin: auto;
-  margin-top: -10vw;
-  margin-bottom: -5vw;
-  filter: drop-shadow(2vw 1vw 1vw grey);
+  margin-top: -7vh;
+  margin-bottom: -7vh;
+  filter: drop-shadow(2vh 1vh 1vh grey);
 }
 
 @keyframes App-logo-spin {
@@ -71,7 +70,7 @@ p {
   color: rgb(252, 136, 136);
   display: block;
   margin: auto;
-  font-size: 2vw;
+  font-size: 4vh;
 }
 
 #form1 {
