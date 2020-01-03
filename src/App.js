@@ -4,6 +4,11 @@ import "./App.css";
 import fresa from "./cur/fresa.cur";
 import sword from "./cur/sword.cur";
 import bug from "./cur/bug.cur";
+import helados1 from "./helados/helados1.wav";
+import helados2 from "./helados/helados2.wav";
+import helados3 from "./helados/helados3.wav";
+import helados4 from "./helados/helados4.wav";
+import helados5 from "./helados/helados5.wav";
 
 class App extends React.Component {
   cursorStyle(rand) {
@@ -17,14 +22,21 @@ class App extends React.Component {
     const randString = "url(" + rand + "), crosshair";
     console.log(randString);
     return (
-      <div className="App" onKeyPress={this.keyPress} style={{ cursor: randString }}>
-        <header className="App-header">gewzer</header>
+      <div
+        tabIndex="1"
+        className="App"
+        onKeyDown={this.keypressApp}
+        style={{ cursor: randString }}
+      >
+        <header className="App-header">
+          <span id="headerSpan">gewzer</span>
+        </header>
         <img src={logo} className="App-logo" alt="logo" />
         <div id="showBio">
           <button id="bioButton">who?</button>
         </div>
         <div id="bioBox">
-          <span>
+          <span id="bioSpan">
             juan escobedo aka 'gewzer'
             <br></br>
             @gewzer38 on{" "}
@@ -45,20 +57,31 @@ class App extends React.Component {
     console.log(event.key);
   }
 
-  keypressApp(keyCode, audioId) {
-    document.addEventListener("keydown", function(e) {
-      if (e.keyCode === keyCode) {
-        audioId.play();
-        console.log(keyCode);
-      }
-    });
+  h1 = new Audio(helados1);
+  h2 = new Audio(helados2);
+  h3 = new Audio(helados3);
+  h4 = new Audio(helados4);
+  h5 = new Audio(helados5);
 
-    this.keypressApp(71, "helados1");
-    this.keypressApp(69, "helados2");
-    this.keypressApp(87, "helados3");
-    this.keypressApp(90, "helados4");
-    this.keypressApp(82, "helados5");
-  }
+  keypressApp = event => {
+    if (event.key === "g") {
+      this.h1.play();
+    } else if (event.key === "e") {
+      this.h2.play();
+    } else if (event.key === "w") {
+      this.h3.play();
+    } else if (event.key === "z") {
+      this.h4.play();
+    } else if (event.key === "r") {
+      this.h5.play();
+    }
+  };
+  /* 
+  keypressApp(71, "helados1");
+  keypressApp(69, "helados2");
+  keypressApp(87, "helados3");
+  keypressApp(90, "helados4");
+  keypressApp(82, "helados5"); */
 }
 
 export default App;

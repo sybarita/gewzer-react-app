@@ -38,7 +38,7 @@ a:focus {
   border-radius: 15vh;
 }
 
-.App-header:hover {
+#headerSpan:hover {
   color: rgb(252, 169, 169);
 }
 
@@ -83,6 +83,6 @@ p {
   font-size: 4vh;
 }
 
-#bioBox:hover {
+#bioSpan:hover {
   color: rgb(255, 152, 152);
 }
