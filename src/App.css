@@ -1,25 +1,27 @@
 @font-face {
-  font-family: 'Luminari';
+  font-family: "Luminari";
   font-display: block;
-  src: local('Luminari'), url('./fonts/Luminari.ttf') format('truetype');
+  src: local("Luminari"), url("./fonts/Luminari.ttf") format("truetype");
 }
 
 a {
-  color: rgb(252, 136, 136);
+  color: rgb(255, 152, 152);
 }
 a:visited {
   color: rgb(255, 213, 213);
 }
-a:hover, a:active, a:focus {
-  color: rgb(255, 221, 221);
+a:hover,
+a:active,
+a:focus {
+  color: rgb(253, 200, 200);
 }
 
 .App {
   text-align: center;
-  font-family: 'Luminari';
+  font-family: "Luminari";
   background-color: lightpink;
   margin-top: 0;
-  cursor: url('./cur/sword.cur'), crosshair;
+  cursor: url("./cur/sword.cur"), crosshair;
   width: 100vw;
   height: 100vh;
 }
@@ -27,20 +29,23 @@ a:hover, a:active, a:focus {
 .App-header {
   margin: auto;
   display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 15vh;
+  margin-bottom: 3vh;
   width: 100vw;
   height: 15vh;
+  font-size: 18vh;
   color: rgb(253, 163, 163);
   background-color: lightpink;
   border-radius: 15vh;
 }
 
+.App-header:hover {
+  color: rgb(252, 169, 169);
+}
+
 p {
   display: block;
   margin: auto;
-  font-size: 5vh;
+  font-size: 6vh;
 }
 
 .App-logo {
@@ -51,7 +56,8 @@ p {
   margin: auto;
   margin-top: -7vh;
   margin-bottom: -7vh;
-  filter: drop-shadow(2vh 1vh 1vh grey);
+  filter: drop-shadow(2vh 1vh 1.5vh grey);
+  opacity: 0.95;
 }
 
 @keyframes App-logo-spin {
@@ -66,6 +72,10 @@ p {
   }
 }
 
+#showBio {
+  display: none;
+}
+
 #bioBox {
   color: rgb(252, 136, 136);
   display: block;
@@ -73,29 +83,6 @@ p {
   font-size: 4vh;
 }
 
-#form1 {
-  display: none;
-  margin: auto;
-  width: 50vw;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  background-color: lightpink;
+#bioBox:hover {
+  color: rgb(255, 152, 152);
 }
-
-
-ul {
-  display: none;
-  width: 30vw;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #8a8a8a31;
-  padding: 5px;
-  list-style-type: none;
-  font-family: Luminari;
-  font-size: calc(10px + 2vw);
-  background-color: lightpink;
-  border: 2px solid rgba(255, 65, 65, 0.384);
-  border-radius: 5vmin;
-}
-
