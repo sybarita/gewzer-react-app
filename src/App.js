@@ -76,12 +76,6 @@ class App extends React.Component {
       this.h5.play();
     }
   };
-  /* 
-  keypressApp(71, "helados1");
-  keypressApp(69, "helados2");
-  keypressApp(87, "helados3");
-  keypressApp(90, "helados4");
-  keypressApp(82, "helados5"); */
 }
 
 export default App;
