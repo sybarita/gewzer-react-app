@@ -23,7 +23,7 @@ class App extends React.Component {
     console.log(randString);
     return (
       <div
-        autofocus="true" 
+        autofocus="true"
         tabIndex="1"
         className="AppX"
         onKeyDown={this.keypressApp}
