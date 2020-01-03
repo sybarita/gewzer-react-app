@@ -10,7 +10,7 @@ This page is a portfolio for my friend Juan aka gewzer and a learning project fo
 
         ,,******************************************************************************,,,        
      *(,                                                                                   ,(*     
-    /.                                                                                       ./    
+    /.                                                                                       .\    
    .(                                What the fuck, man?!                                     (.   
    .(                                                                                         /.   
     (                                                                                         (    
