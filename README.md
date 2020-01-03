@@ -14,3 +14,8 @@ This page is a portfolio for my friend Juan aka gewzer and a learning project fo
 	|      |  _   |---   (  / \  )  ====   |---   |___)	|
 	|      (___)  (____   \/   \/  /_____  (____  |   \	|
 	|_______________________________________________________|
+
+
+
+
+

@@ -23,8 +23,9 @@ class App extends React.Component {
     console.log(randString);
     return (
       <div
+        autofocus="true" 
         tabIndex="1"
-        className="App"
+        className="AppX"
         onKeyDown={this.keypressApp}
         style={{ cursor: randString }}
       >
