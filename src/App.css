@@ -38,8 +38,15 @@ a:focus {
   border-radius: 15vh;
 }
 
+#headerSpan {
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+}
+
 #headerSpan:hover {
-  color: rgb(252, 169, 169);
+  color: rgb(255, 197, 197);
 }
 
 p {
@@ -72,17 +79,32 @@ p {
   }
 }
 
-#showBio {
+#bioButton {
+  margin: auto;
+  font-family: "Luminari";
+  font-size: 2.5vh;
+  background-color: rgb(252, 203, 203);
+  border-style: none;
+  border-radius: 2vh;
+  color: rgb(255, 153, 153);
+  width: 10vh;
+  height: 4vh;
   display: none;
 }
 
 #bioBox {
   color: rgb(252, 136, 136);
-  display: block;
+  display: inline;
   margin: auto;
   font-size: 4vh;
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+  opacity: 0.8;
 }
 
-#bioSpan:hover {
-  color: rgb(255, 152, 152);
+#bioBox:hover {
+  color: rgb(255, 169, 169);
+  opacity: 0.75;
 }

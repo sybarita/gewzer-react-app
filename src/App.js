@@ -18,12 +18,10 @@ class App extends React.Component {
   render() {
     const cursorArray = [fresa, sword, bug];
     const rand = cursorArray[~~((Math.random() * cursorArray.length) | 0)];
-    console.log(rand);
     const randString = "url(" + rand + "), crosshair";
-    console.log(randString);
     return (
       <div
-        autofocus="true"
+        autoFocus={true}
         tabIndex="1"
         className="AppX"
         onKeyDown={this.keypressApp}
@@ -33,10 +31,11 @@ class App extends React.Component {
           <span id="headerSpan">gewzer</span>
         </header>
         <img src={logo} className="App-logo" alt="logo" />
-        <div id="showBio">
-          <button id="bioButton">who?</button>
-        </div>
         <div id="bioBox">
+          <button id="bioButton" onClick={this.toggleDiv}>
+            who?
+          </button>
+          <br></br>
           <span id="bioSpan">
             juan escobedo aka 'gewzer'
             <br></br>
@@ -54,9 +53,14 @@ class App extends React.Component {
     );
   }
 
-  keyPress(event) {
-    console.log(event.key);
-  }
+  /* toggleDiv = () => {
+    console.log(this.render.visStyle)
+    if (this.render.visStyle === "hidden") {
+      this.render.visStyle = "visible";
+    } else if (this.render.visStyle === "visible") {
+      this.render.visStyle = "hidden";
+    }
+  } */
 
   h1 = new Audio(helados1);
   h2 = new Audio(helados2);
