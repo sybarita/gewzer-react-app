@@ -49,6 +49,13 @@ class App extends React.Component {
             3800
           </span>
         </div>
+        <div>
+          <span id="foot">
+            powered by <a href="http://soundcloud.com/sven-gali">Svengali</a>
+            <br></br>
+            (P.S. type "gewzer" on your keyboard for a surprise!)
+          </span>
+        </div>
       </div>
     );
   }

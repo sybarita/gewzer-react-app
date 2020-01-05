@@ -29,20 +29,13 @@ a:focus {
 .App-header {
   margin: auto;
   display: block;
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
   width: 100vw;
   height: 15vh;
-  font-size: 18vh;
+  font-size: 16vh;
   color: rgb(253, 163, 163);
   background-color: lightpink;
   border-radius: 15vh;
-}
-
-#headerSpan {
-  -webkit-transition: 5s;
-  -moz-transition: 5s;
-  -o-transition: 5s;
-  transition: 5s;
 }
 
 #headerSpan:hover {
@@ -61,10 +54,11 @@ p {
   pointer-events: none;
   display: block;
   margin: auto;
-  margin-top: -7vh;
-  margin-bottom: -7vh;
+  margin-top: -8vh;
+  margin-bottom: -14vh;
   filter: drop-shadow(2vh 1vh 1.5vh grey);
   opacity: 0.95;
+  z-index: 0;
 }
 
 @keyframes App-logo-spin {
@@ -94,17 +88,17 @@ p {
 
 #bioBox {
   color: rgb(252, 136, 136);
-  display: inline;
+  display: block;
   margin: auto;
   font-size: 4vh;
-  -webkit-transition: 5s;
-  -moz-transition: 5s;
-  -o-transition: 5s;
-  transition: 5s;
-  opacity: 0.8;
 }
 
-#bioBox:hover {
-  color: rgb(255, 169, 169);
-  opacity: 0.75;
+#bioSpan:hover {
+  color: rgb(255, 210, 210);
+  z-index: 1;
+}
+
+#foot {
+  color: rgb(255, 217, 217);
+  font-size: 2vh;
 }
