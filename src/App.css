@@ -90,6 +90,7 @@ p {
   color: rgb(252, 136, 136);
   display: block;
   margin: auto;
+  margin-bottom: 4vh;
   font-size: 4vh;
 }
 
