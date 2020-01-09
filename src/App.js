@@ -29,7 +29,9 @@ class App extends React.Component {
         style={{ cursor: randString }}
       >
         <header className="App-header">
-          <span id="headerSpan">{header}</span>
+          <span id="headerSpan">
+            <img src={header} alt="gewzer" id="header"></img>
+          </span>
         </header>
         <img src={logo} className="App-logo" alt="logo" />
         <div id="bioBox">

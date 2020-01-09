@@ -29,11 +29,15 @@ a:focus {
 .App-header {
   margin: auto;
   display: block;
-  margin-bottom: 1vh;
+  margin-bottom: 5vh;
   width: 100vw;
   height: 15vh;
   font-size: 16vh;
   color: rgb(253, 163, 163);
+}
+
+#header {
+  width: 60vh;
 }
 
 #headerSpan:hover {
@@ -85,7 +89,7 @@ p {
 }
 
 #bioBox {
-  color: rgb(252, 136, 136);
+  color: rgb(216, 146, 146);
   display: block;
   margin: auto;
   font-size: 4vh;
