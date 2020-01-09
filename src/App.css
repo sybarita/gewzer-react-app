@@ -49,7 +49,7 @@ p {
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 1.8s ease-in-out;
+  animation: App-logo-pulse infinite 1.8s ease-in-out;
   height: 60vh;
   pointer-events: none;
   display: block;
@@ -61,7 +61,7 @@ p {
   z-index: 0;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-logo-pulse {
   from {
     transform: scale(1);
   }
@@ -90,7 +90,6 @@ p {
   color: rgb(252, 136, 136);
   display: block;
   margin: auto;
-  margin-bottom: 4vh;
   font-size: 4vh;
 }
 
@@ -102,5 +101,4 @@ p {
 #foot {
   color: rgb(255, 217, 217);
   font-size: 2vh;
-  margin-top: 4vh;
 }
