@@ -34,8 +34,6 @@ a:focus {
   height: 15vh;
   font-size: 16vh;
   color: rgb(253, 163, 163);
-  background-color: lightpink;
-  border-radius: 15vh;
 }
 
 #headerSpan:hover {

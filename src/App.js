@@ -1,4 +1,5 @@
 import React from "react";
+import header from "./header.png";
 import logo from "./logo.png";
 import "./App.css";
 import fresa from "./cur/fresa.cur";
@@ -28,7 +29,7 @@ class App extends React.Component {
         style={{ cursor: randString }}
       >
         <header className="App-header">
-          <span id="headerSpan">gewzer</span>
+          <span id="headerSpan">{header}</span>
         </header>
         <img src={logo} className="App-logo" alt="logo" />
         <div id="bioBox">
