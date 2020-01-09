@@ -24,12 +24,13 @@ a:focus {
   cursor: url("./cur/sword.cur"), crosshair;
   width: 100vw;
   height: 100vh;
+  line-height: 5vh;
 }
 
 .App-header {
   margin: auto;
   display: block;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
   width: 100vw;
   height: 15vh;
   font-size: 16vh;
@@ -37,7 +38,7 @@ a:focus {
 }
 
 #header {
-  width: 60vh;
+  width: 50vh;
 }
 
 #headerSpan:hover {
@@ -56,8 +57,8 @@ p {
   pointer-events: none;
   display: block;
   margin: auto;
-  margin-top: -8vh;
-  margin-bottom: -14vh;
+  margin-top: -10vh;
+  margin-bottom: -13vh;
   filter: drop-shadow(2vh 1vh 1.5vh grey);
   opacity: 0.95;
   z-index: 0;
@@ -93,6 +94,7 @@ p {
   display: block;
   margin: auto;
   font-size: 4vh;
+  margin-bottom: 4vh;
 }
 
 #bioSpan:hover {
