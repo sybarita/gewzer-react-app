@@ -21,56 +21,57 @@ class App extends React.Component {
     const rand = cursorArray[~~((Math.random() * cursorArray.length) | 0)];
     const randString = "url(" + rand + "), crosshair";
     return (
-      <div
-        autoFocus={true}
-        tabIndex="1"
-        className="AppX"
-        onKeyDown={this.keypressApp}
-        style={{ cursor: randString }}
-      >
-        <header className="App-header">
-          <span id="headerSpan">
+      <div id="outer" style={{ cursor: randString }}>
+        <div
+          autoFocus={true}
+          tabIndex="1"
+          className="AppX"
+          onKeyDown={this.keypressApp}
+        >
+          <header className="App-header">
             <img src={header} alt="gewzer" id="header"></img>
-          </span>
-        </header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <div id="bioBox">
-          <button id="bioButton" onClick={this.toggleDiv}>
-            who?
-          </button>
-          <br></br>
-          <span id="bioSpan">
-            juan escobedo aka 'gewzer'
-            <br></br>
-            @gewzer38 on{" "}
-            <a href="https://www.instagram.com/gewzer38">instagram</a>
-            <br></br>
-            @juander on <a href="http://soundcloud.com/juander">soundcloud</a>
-            <br></br>
-            los angeles / fresno
-            <br></br>
-            3800
-          </span>
-        </div>
-        <div>
-          <span id="foot">
-            powered by <a href="http://soundcloud.com/sven-gali">Svengali</a>
-            <br></br>
-            (P.S. type "gewzer" on your keyboard for a surprise!)
-          </span>
+          </header>
+          <img src={logo} className="App-logo" alt="logo" />
+          <div id="bioBox">
+            <span id="bioSpan">
+              juan escobedo aka 'gewzer'
+              <br></br>
+              @gewzer38 on{" "}
+              <a
+                href="https://www.instagram.com/gewzer38"
+                style={{ cursor: randString }}
+              >
+                instagram
+              </a>
+              <br></br>
+              @juander on{" "}
+              <a
+                href="http://soundcloud.com/juander"
+                style={{ cursor: randString }}
+              >
+                soundcloud
+              </a>
+              <br></br>
+              los angeles / fresno
+              <br></br>
+              3800
+            </span>
+          </div>
+          <div id="footBox">
+            <span id="foot1">
+              powered by{" "}
+              <a href="http://peter.technology/" style={{ cursor: randString }}>
+                svengali
+              </a>
+            </span>
+            <span id="foot2">
+              (p.s. type "gewzer" on your keyboard for a surprise!)
+            </span>
+          </div>
         </div>
       </div>
     );
   }
-
-  /* toggleDiv = () => {
-    console.log(this.render.visStyle)
-    if (this.render.visStyle === "hidden") {
-      this.render.visStyle = "visible";
-    } else if (this.render.visStyle === "visible") {
-      this.render.visStyle = "hidden";
-    }
-  } */
 
   h1 = new Audio(helados1);
   h2 = new Audio(helados2);
