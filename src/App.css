@@ -5,15 +5,15 @@
 }
 
 a {
-  color: rgb(255, 152, 152);
+  color: rgb(255, 241, 252);
 }
 a:visited {
-  color: rgb(255, 213, 213);
+  color: rgb(255, 219, 247);
 }
 a:hover,
 a:active,
 a:focus {
-  color: rgb(253, 200, 200);
+  color: rgb(255, 213, 245);
 }
 
 #outer {
@@ -31,7 +31,6 @@ a:focus {
   align-items: center;
   text-align: center;
   font-family: "Luminari";
-  background-color: lightpink;
   width: 40vh;
   height: 100%;
   outline: none;
@@ -43,8 +42,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16vh;
-  color: rgb(253, 163, 163);
+  filter: hue-rotate(-20deg) brightness(165%) drop-shadow(0vh 1vh 1.5vh rgb(182, 182, 182));
 }
 
 #header {
@@ -53,11 +51,11 @@ a:focus {
 }
 
 .App-logo {
-  animation: App-logo-pulse infinite 1.8s ease-in-out;
+  animation: App-logo-pulse infinite 3.8s ease-in-out;
   width: 100%;
   pointer-events: none;
   margin: auto;
-  filter: drop-shadow(2vh 1vh 1.5vh grey);
+  filter: drop-shadow(0vh 2vh 1.5vh grey);
   opacity: 0.95;
   z-index: 0;
 }
@@ -65,27 +63,26 @@ a:focus {
 @keyframes App-logo-pulse {
   from {
     transform: scale(1);
+    filter: drop-shadow(0vh 1vh 1.65vh grey);
   }
   50% {
     transform: scale(0.8);
+    filter: drop-shadow(0vh 1vh 1.15vh grey);
   }
   to {
     transform: scale(1);
+    filter: drop-shadow(0vh 1vh 1.65vh grey);
   }
 }
 
 #bioBox {
-  color: rgb(216, 146, 146);
+  color: rgb(255, 241, 252);
   margin: auto;
   width: 100%;
   height: 20%;
   font-size: 3vh;
   line-height: 140%;
-}
-
-#bioSpan:hover {
-  color: rgb(255, 210, 210);
-  z-index: 1;
+  filter: drop-shadow(0vh 1vh 1.5vh rgb(165, 165, 165));
 }
 
 #footBox {
@@ -96,7 +93,8 @@ a:focus {
   line-height: 140%;
   height: 10%;
   font-size: 1.5vh;
-  color: rgb(255, 217, 217);
+  color: rgb(255, 241, 252);
+  filter: drop-shadow(0vh 1vh 1.5vh grey);
 }
 
 @media only screen and (hover: none) {
