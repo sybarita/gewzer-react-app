@@ -42,22 +42,30 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: hue-rotate(-20deg) brightness(165%) drop-shadow(0vh 1vh 1.5vh rgb(182, 182, 182));
+  filter: hue-rotate(-20deg) brightness(165%)
+    drop-shadow(0vh 1vh 1.5vh rgb(182, 182, 182));
 }
 
 #header {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 60%;
 }
 
 .App-logo {
-  animation: App-logo-pulse infinite 3.8s ease-in-out;
   width: 100%;
   pointer-events: none;
   margin: auto;
-  filter: drop-shadow(0vh 2vh 1.5vh grey);
-  opacity: 0.95;
-  z-index: 0;
+}
+
+.Logo-box {
+  animation: App-logo-spin infinite 3.8s ease-in-out;
+  animation-play-state: running;
+  filter: drop-shadow(0vh 1vh 1.65vh grey);
+  opacity: 0.6;
+}
+
+.Logo-box:hover {
+  animation-play-state: paused;
 }
 
 @keyframes App-logo-pulse {
@@ -72,6 +80,18 @@ a:focus {
   to {
     transform: scale(1);
     filter: drop-shadow(0vh 1vh 1.65vh grey);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

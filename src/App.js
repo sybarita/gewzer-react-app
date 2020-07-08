@@ -31,7 +31,9 @@ class App extends React.Component {
           <header className="App-header">
             <img src={header} alt="gewzer" id="header"></img>
           </header>
-          <img src={logo} className="App-logo" alt="logo" />
+          <div className="Logo-box">
+            <img src={logo} className="App-logo" alt="logo" />
+          </div>
           <div id="bioBox">
             <span id="bioSpan">
               juan escobedo aka 'gewzer'
@@ -79,7 +81,7 @@ class App extends React.Component {
   h4 = new Audio(helados4);
   h5 = new Audio(helados5);
 
-  keypressApp = event => {
+  keypressApp = (event) => {
     if (event.key === "g") {
       this.h1.play();
     } else if (event.key === "e") {
