@@ -99,10 +99,12 @@ a:focus {
   color: rgb(255, 241, 252);
   margin: auto;
   width: 100%;
+  min-width: 273px;
   height: 20%;
   font-size: 3vh;
   line-height: 140%;
   filter: drop-shadow(0vh 0vh 1.5vh rgb(165, 165, 165));
+  overflow: hidden;
 }
 
 #footBox {
