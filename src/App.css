@@ -1,126 +1,131 @@
 @font-face {
-  font-family: "Luminari";
-  font-display: block;
-  src: local("Luminari"), url("./fonts/Luminari.ttf") format("truetype");
+    font-family: "Luminari";
+    font-display: block;
+    src: local("Luminari"), url("./fonts/Luminari.ttf") format("truetype");
 }
 
 a {
-  color: rgb(255, 241, 252);
+    color: rgb(255, 241, 252);
 }
+
 a:visited {
-  color: rgb(255, 219, 247);
+    color: rgb(255, 219, 247);
 }
+
 a:hover,
 a:active,
 a:focus {
-  color: rgb(255, 213, 245);
+    color: rgb(255, 213, 245);
 }
 
 #outer {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  cursor: url("./cur/sword.cur"), crosshair;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: url("./cur/sword.cur"), crosshair;
 }
 
 .AppX {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  font-family: "Luminari";
-  width: 40vh;
-  height: 100%;
-  outline: none;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: "Luminari";
+    width: 40vh;
+    min-width: 273px;
+    height: 100%;
+    outline: none;
+    margin: auto;
 }
 
 .App-header {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: hue-rotate(-20deg) brightness(165%)
-    drop-shadow(0vh 0vh 1.5vh rgb(182, 182, 182));
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: hue-rotate(-20deg) brightness(165%) drop-shadow(0vh 0vh 1.5vh rgb(182, 182, 182));
 }
 
 #header {
-  height: auto;
-  width: 60%;
+    height: auto;
+    width: 60%;
 }
 
 .App-logo {
-  width: 100%;
-  pointer-events: none;
-  margin: auto;
+    width: 100%;
+    pointer-events: none;
+    margin: auto;
 }
 
 .Logo-box {
-  animation: App-logo-spin infinite 3.8s ease-in-out;
-  animation-play-state: running;
-  filter: drop-shadow(0vh 0vh 1.65vh grey);
-  opacity: 0.6;
+    animation: App-logo-spin infinite 3.8s ease-in-out;
+    animation-play-state: running;
+    filter: drop-shadow(0vh 0vh 1.65vh grey);
+    opacity: 0.6;
 }
 
 .Logo-box:hover {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 @keyframes App-logo-pulse {
-  from {
-    transform: scale(1);
-    filter: drop-shadow(0vh 0vh 1.65vh grey);
-  }
-  50% {
-    transform: scale(0.8);
-    filter: drop-shadow(0vh 0vh 1.15vh grey);
-  }
-  to {
-    transform: scale(1);
-    filter: drop-shadow(0vh 0vh 1.65vh grey);
-  }
+    from {
+        transform: scale(1);
+        filter: drop-shadow(0vh 0vh 1.65vh grey);
+    }
+    50% {
+        transform: scale(0.8);
+        filter: drop-shadow(0vh 0vh 1.15vh grey);
+    }
+    to {
+        transform: scale(1);
+        filter: drop-shadow(0vh 0vh 1.65vh grey);
+    }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #bioBox {
-  color: rgb(255, 241, 252);
-  margin: auto;
-  width: 100%;
-  min-width: 273px;
-  height: 20%;
-  font-size: 3vh;
-  line-height: 140%;
-  filter: drop-shadow(0vh 0vh 1.5vh rgb(165, 165, 165));
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 241, 252);
+    margin: auto;
+    width: 100%;
+    height: 20%;
+    font-size: 3vh;
+    line-height: 140%;
+    filter: drop-shadow(0vh 0vh 1.5vh rgb(165, 165, 165));
+    overflow: visible;
 }
 
 #footBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 140%;
-  height: 10%;
-  font-size: 1.5vh;
-  color: rgb(255, 241, 252);
-  filter: drop-shadow(0vh 0vh 1.5vh grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 140%;
+    height: 10%;
+    font-size: 1.5vh;
+    color: rgb(255, 241, 252);
+    filter: drop-shadow(0vh 0vh 1.5vh grey);
 }
 
 @media only screen and (hover: none) {
-  #foot2 {
-    display: none;
-  }
+    #foot2 {
+        display: none;
+    }
 }
